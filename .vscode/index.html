@@ -5,33 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        body * {
-            margin: 10px;
-            border: 1px solid red;
-        }
-    </style>
+  
 </head>
 <body>
-
-    <form action="">
-   <div class="div1"> div 
-    <p>p</p>
-   </div>
-
-
-
-
-
-
-
-    </form>
+<div id="Div"></div>
     <script>
    'use script' ;
 
 let jsonformatster = '{ "first_name" : "Sammy", "last_name" : "Shark", "location" : "Ocean", "online" : true, "followers" : 987 }' ;
+let userDivtag = document.getElementById('Div')
+
+
 
 let jsonformatobj = JSON.parse(jsonformatster)
+
+for(var key in jsonformatobj){
+    userDivtag.innerHTML += key + "=>" +jsonformatobj[key] + "<br>" ; 
+}
+
+
+
 console.log(jsonformatobj['first_name'])
     </script>
 </body>
