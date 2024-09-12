@@ -2,33 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
-.myDiv{
-   width: 200px;
-   height: 200px;
-   left: 200px;
-   right: 200px;
-   background-color:blue;
-}
+        body * {
+            margin: 10px;
+            border: 1px solid red;
+        }
     </style>
 </head>
-<body style="text-align: center;">
-<div class="myDiv"></div>
-<button onclick="chengcolor()" class="myDiv">get click</button>
+<body>
 
-   
-<script>
-   function chengcolor()
-   {
+    <form action="">
+   <div class="div1"> div 
+    <p>p</p>
+   </div>
 
-   
-   myDiv.style.backgroundcolor = prompt("چی رنگی دوس داری جیگر؟");
+
+
+
+
+
+
+    </form>
+    <script>
+   'use script' ;
+
+   for (let elem of document.querySelectorAll(*)) {
+
+   elem.addEventListener("click", e => alert( "Capturing : $ {elem.tagName}"), true);
+   elem.addEventListener("click", e => alert( "Bubbling : $ {elem.tagName}"  ));
 
 
    }
-   
-</script>
+   alert(let)
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>
