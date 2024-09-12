@@ -29,21 +29,10 @@
     <script>
    'use script' ;
 
-   for (let elem of document.querySelectorAll(*)) {
+let jsonformatster = '{ "first_name" : "Sammy", "last_name" : "Shark", "location" : "Ocean", "online" : true, "followers" : 987 }' ;
 
-   elem.addEventListener("click", e => alert( "Capturing : $ {elem.tagName}"), true);
-   elem.addEventListener("click", e => alert( "Bubbling : $ {elem.tagName}"  ));
-
-
-   }
-   alert(let)
-
-
-
-
-
-
-
+let jsonformatobj = JSON.parse(jsonformatster)
+console.log(jsonformatobj['first_name'])
     </script>
 </body>
 </html>
