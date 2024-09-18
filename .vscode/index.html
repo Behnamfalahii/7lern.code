@@ -11,21 +11,20 @@
 <div id="Div"></div>
     <script>
    'use script' ;
+   function testFunck (a = 1){
+    // a = a || 1 ;
+    console.log (a)
+   }
+   testFunck(5);
 
-let jsonformatster = '{ "first_name" : "Sammy", "last_name" : "Shark", "location" : "Ocean", "online" : true, "followers" : 987 }' ;
-let userDivtag = document.getElementById('Div')
+   const luke = {
+    name : "behnam" , 
+    family : "falahi"
+   }
 
+   const onluke = luke.name;
+   alert(onluke)
 
-
-let jsonformatobj = JSON.parse(jsonformatster)
-
-for(var key in jsonformatobj){
-    userDivtag.innerHTML += key + "=>" +jsonformatobj[key] + "<br>" ; 
-}
-
-
-
-console.log(jsonformatobj['first_name'])
     </script>
 </body>
 </html>
