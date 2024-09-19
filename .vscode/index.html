@@ -11,20 +11,12 @@
 <div id="Div"></div>
     <script>
    'use script' ;
-   function testFunck (a = 1){
-    // a = a || 1 ;
-    console.log (a)
-   }
-   testFunck(5);
 
-   const luke = {
-    name : "behnam" , 
-    family : "falahi"
-   }
-
-   const onluke = luke.name;
-   alert(onluke)
-
+   const myList = [10,20,30,40,50];
+   const [firstNumber , scondNumber,...others]  = myList;
+   
+   console.log(firstNumber,scondNumber)
+   console.log(others)
     </script>
 </body>
 </html>
